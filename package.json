@@ -1,0 +1,47 @@
+{
+  "name": "uniq",
+  "version": "0.1.0",
+  "description": "Extract unique values from array",
+  "main": "src/uniq.es6",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/satya164/uniq.git"
+  },
+  "keywords": [
+    "array",
+    "unique",
+    "objects"
+  ],
+  "author": "Satyajit Sahoo <satyajit.happy@gmail.com> (https://github.com/satya164/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satya164/uniq/issues"
+  },
+  "homepage": "https://github.com/satya164/uniq#readme",
+  "devDependencies": {
+    "babel": "latest",
+    "babel-eslint": "latest",
+    "babelify": "latest",
+    "browserify": "latest",
+    "del": "latest",
+    "eslint": "latest",
+    "gulp": "latest",
+    "gulp-bump": "latest",
+    "gulp-eslint": "latest",
+    "gulp-flowtype": "latest",
+    "gulp-git": "latest",
+    "gulp-jscs": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "mocha": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-source-stream": "latest"
+  }
+}
