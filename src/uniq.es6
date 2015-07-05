@@ -1,9 +1,7 @@
 function uniq(arr, equality) {
-    let result;
-
     if (typeof equality !== "undefined") {
         if (typeof equality === "function") {
-            result = [];
+            let result = [];
 
             for (let a of arr) {
                 let has = false;
@@ -20,14 +18,14 @@ function uniq(arr, equality) {
                     result.push(a);
                 }
             }
+
+            return result;
         } else {
             throw new TypeError("Invalid equality function");
         }
     } else {
-        result = arr.filter((item, index) => arr.indexOf(item) === index);
+        return arr.filter((item, index) => arr.indexOf(item) === index);
     }
-
-    return result;
 }
 
 export default uniq;
