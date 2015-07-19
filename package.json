@@ -2,7 +2,7 @@
   "name": "uniq",
   "version": "0.1.0",
   "description": "Extract unique values from array",
-  "main": "src/uniq.es6",
+  "main": "src/uniq.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test/test.js"
   },

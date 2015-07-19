@@ -36,7 +36,7 @@ gulp.task("lint", () =>
 
 gulp.task("bundle", () =>
     browserify({
-        entries: "./src/main.es6",
+        entries: "./src/uniq.js",
         debug: true,
         transform: [ babelify ]
     }).bundle()
@@ -46,7 +46,7 @@ gulp.task("bundle", () =>
         // End the stream to prevent gulp from crashing
         this.end();
     })
-    .pipe(source("main.js"))
+    .pipe(source("uniq.js"))
     .pipe(buffer())
     .pipe(plumber({ errorHandler }))
     .pipe(sourcemaps.init({ loadMaps: true }))
@@ -62,10 +62,10 @@ gulp.task("scripts", [ "bundle" ]);
 gulp.task("clean", () => del([ "dist" ]));
 
 // Watch for changes
-gulp.task("watch", () => gulp.watch("src/**/*.js", [ "flow", "lint", "scripts" ]));
+gulp.task("watch", () => gulp.watch("src/**/*.js", [ "lint", "scripts" ]));
 
 // Build files
 gulp.task("build", [ "scripts" ]);
 
 // Default Task
-gulp.task("default", [ "flow", "lint", "clean" ], () => gulp.start("build"));
+gulp.task("default", [ "lint", "clean" ], () => gulp.start("build"));
