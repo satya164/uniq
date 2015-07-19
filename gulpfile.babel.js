@@ -11,7 +11,6 @@ import sourcemaps from "gulp-sourcemaps";
 import rename from "gulp-rename";
 import flow from "gulp-flowtype";
 import eslint from "gulp-eslint";
-import jscs from "gulp-jscs";
 import uglify from "gulp-uglify";
 
 const errorHandler = notify.onError("Error: <%= error.message %>");
@@ -31,7 +30,6 @@ gulp.task("lint", () =>
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError())
-    .pipe(jscs())
 );
 
 gulp.task("bundle", () =>

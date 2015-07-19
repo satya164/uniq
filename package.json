@@ -33,7 +33,6 @@
     "gulp-eslint": "latest",
     "gulp-flowtype": "latest",
     "gulp-git": "latest",
-    "gulp-jscs": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
     "gulp-rename": "latest",
