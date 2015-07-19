@@ -1,12 +1,12 @@
 function uniq(arr, equality) {
     if (typeof equality !== "undefined") {
         if (typeof equality === "function") {
-            let result = [];
+            const result = [];
 
-            for (let a of arr) {
+            for (const a of arr) {
                 let has = false;
 
-                for (let b of result) {
+                for (const b of result) {
                     if (equality(a, b)) {
                         has = true;
 
