@@ -3,7 +3,7 @@
 require("babel/register");
 
 var assert = require("assert"),
-    uniq = require("../src/uniq.es6");
+    uniq = require("../src/uniq.js");
 
 describe("uniq test", function() {
     it("should return array with unique strings", function() {
@@ -16,7 +16,7 @@ describe("uniq test", function() {
         var arr = [ 1, 3, 5, 7, "5", "1", 9 ];
 
         assert.deepEqual(uniq(arr, function(a, b) {
-            return parseInt(a) === parseInt(b);
+            return parseInt(a, 10) === parseInt(b, 10);
         }), [ 1, 3, 5, 7, 9 ]);
     });
 });
