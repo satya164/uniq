@@ -1,5 +1,7 @@
 # uniq
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/satya164/uniq.svg)](https://greenkeeper.io/)
+
 Extract unique items from array.
 
 [![Build status](https://travis-ci.org/satya164/uniq.svg?branch=master)](https://travis-ci.org/satya164/uniq)
